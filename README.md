@@ -1,3 +1,8 @@
+# Explorating Data Analysis 
+
+Exemple Different techniques for exploring and understand a dataset.
+
+
 ```python
 import pandas as pd
 import numpy as np
@@ -12,7 +17,6 @@ df = pd.read_csv('./data/paris-real-estate.csv', sep=';')
 ```
 
 # Understand the data
----------------------
 
 
 ```python
@@ -360,7 +364,7 @@ mno.matrix(df, figsize = (20, 6), fontsize=10)
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_9_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_10_1.png)
     
 
 
@@ -379,12 +383,11 @@ mno.bar(df)
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_10_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_11_1.png)
     
 
 
 # Relationship analysis 
------------------------
 
 
 ```python
@@ -401,7 +404,7 @@ sns.heatmap(df.corr())
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_12_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_13_1.png)
     
 
 
@@ -420,7 +423,7 @@ sns.pairplot(df)
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_13_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_14_1.png)
     
 
 
@@ -440,7 +443,7 @@ sns.relplot(x="ref", y="min", data=df)
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_15_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_16_1.png)
     
 
 
@@ -451,7 +454,7 @@ sns.relplot(x="ref", y="min", hue="piece", data=df);
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_16_0.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_17_0.png)
     
 
 
@@ -471,7 +474,7 @@ sns.regplot(x='ref', y='min', data=df)
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_18_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_19_1.png)
     
 
 
@@ -493,7 +496,7 @@ sns.distplot(df['ref'])
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_19_2.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_20_2.png)
     
 
 
@@ -511,7 +514,7 @@ sns.catplot(x='ref', kind='box', data=df)
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_20_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_21_1.png)
     
 
 
@@ -522,7 +525,7 @@ sns.jointplot(x='ref',y='piece',data=df,color='red',kind='kde');
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_21_0.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_22_0.png)
     
 
 
@@ -566,7 +569,7 @@ sns.countplot(x=df['epoque'])
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_23_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_24_1.png)
     
 
 
@@ -584,7 +587,7 @@ sns.catplot(x='ref', kind='box', data=df)
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_24_1.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_25_1.png)
     
 
 
@@ -611,7 +614,7 @@ plt.show()
 
 
     
-![png](explorating-data-analysis_files/explorating-data-analysis_26_0.png)
+![png](explorating-data-analysis_files/explorating-data-analysis_27_0.png)
     
 
 
